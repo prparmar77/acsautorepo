@@ -7,6 +7,6 @@ create('<%= node['fqdn'] %>','NodeManager')
 cd('NodeManager/'+'<%= node['fqdn'] %>')
 set('ListenPort',int('<%= node[:oracle][:nodemgr_port]%>'))
 updateDomain()
-print '<%= node[:oracle][:domain_name] %> machine CREATED SUCCESSFULLY';
+print '<%= node[:oracle][:domain_name] %> machine CREATED SUCCESSFULLY for domain';
 
 exit()
